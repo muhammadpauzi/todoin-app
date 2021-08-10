@@ -1,7 +1,9 @@
 {
-  "name": "svelte-app",
+  "name": "todoin-app",
   "version": "1.0.0",
   "private": true,
+  "author": "Muhammad Pauzi",
+  "repository": "https://github.com/muhammadpauzi/todoin-app",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
