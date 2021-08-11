@@ -1,6 +1,6 @@
 <script>
     export let placeholder = "";
-    export let required = true;
+    export const required = true;
     export let value = "";
 </script>
 
@@ -8,6 +8,7 @@
 
 <style>
     input {
+        display: inline-block;
         width: 100%;
         padding: 0.9rem;
         margin-bottom: 0.5rem;

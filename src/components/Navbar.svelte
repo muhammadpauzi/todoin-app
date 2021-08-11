@@ -15,7 +15,7 @@
 
 <style>
     nav {
-        padding: 1.4rem 0;
+        padding: 1.2rem 0;
     }
 
     .logo {
