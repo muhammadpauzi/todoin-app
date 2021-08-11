@@ -12,4 +12,14 @@
         width: 100%;
         background-color: var(--white);
     }
+
+    .todo h2 {
+        font-size: 1.1rem;
+        font-weight: var(--font-semibold);
+    }
+
+    .todo span {
+        font-weight: var(--font-medium);
+        font-size: 0.8rem;
+    }
 </style>

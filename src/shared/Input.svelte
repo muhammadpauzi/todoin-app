@@ -15,14 +15,14 @@
         border: 1px solid var(--gray-3);
         font-size: 1rem;
         color: var(--gray-5);
-        font-weight: var(--font-medium);
+        font-weight: var(--font-semibold);
         outline: none;
         transition-property: color border-color;
         transition-duration: 0.3s;
     }
 
     input:focus {
-        border-color: var(--orange);
+        border-color: var(--primary);
         color: var(--black);
     }
 </style>

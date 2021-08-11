@@ -1,16 +1,17 @@
 /* variables */
 :root{
-	--orange: #fa8142;
-	--orange-2: rgb(245, 115, 45);
+	--primary: #4460F1;
+	--primary-2: #2747e4;
 	--red: rgb(255, 47, 47);
-	--gray-1: #f8f8f8;
+	--gray-1: #F3F5F5;
 	--gray-3: #c9c9c9;
 	--gray-5: #666565;
 	--black: #000;
 	--white: #fff;
-	--border-radius: 4px;
+	--border-radius: 2px;
 	--background: var(--gray-1);
 	--font-medium: 500;
+	--font-semibold: 600;
 	--font-bold: 700;
 }
 
@@ -21,7 +22,7 @@
 {
 	margin: 0;
 	padding: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Sofia Pro', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Poppins','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	box-sizing: border-box;
 }
 
