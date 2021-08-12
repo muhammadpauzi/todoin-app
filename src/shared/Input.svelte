@@ -19,7 +19,7 @@
         font-weight: var(--font-semibold);
         outline: none;
         transition-property: color border-color;
-        transition-duration: 0.3s;
+        transition-duration: 0.2s;
     }
 
     input:focus {
