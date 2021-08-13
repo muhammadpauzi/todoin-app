@@ -7,6 +7,6 @@
     <p class="text-danger text-center py-3 fw-medium">Todos not added yet.</p>
 {:else}
     {#each $todosStore as todo (todo.id)}
-        <Todo data={todo} />
+        <Todo {todo} />
     {/each}
 {/if}

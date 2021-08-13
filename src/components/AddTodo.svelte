@@ -11,6 +11,7 @@
             $todosStore = saveTodo({
                 id: Math.floor(Date.now() + Math.random() * 1000),
                 title,
+                isComplete: false,
                 dateCreated: Date.now(),
             });
         }
