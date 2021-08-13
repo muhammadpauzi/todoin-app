@@ -2,7 +2,7 @@
     export let type = "primary";
 </script>
 
-<button class="btn btn-{type}">
+<button class="btn btn-{type}" on:click>
     <slot />
 </button>
 
@@ -28,5 +28,14 @@
 
     .btn-primary:hover {
         background-color: var(--primary-2);
+    }
+
+    .btn-danger {
+        background-color: var(--danger);
+        color: var(--white);
+    }
+
+    .btn-danger:hover {
+        background-color: var(--danger-2);
     }
 </style>

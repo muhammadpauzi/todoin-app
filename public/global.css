@@ -2,7 +2,8 @@
 :root{
 	--primary: #4460F1;
 	--primary-2: #2747e4;
-	--red: rgb(255, 47, 47);
+	--danger: #ff2f2f;
+	--danger-2: #ec2222;
 	--gray-1: #F3F5F5;
 	--gray-3: #c9c9c9;
 	--gray-5: #666565;
@@ -70,6 +71,10 @@ body{
 	align-items: center !important;
 }
 
+.flex-1{
+	flex: 1 !important;
+}
+
 /* paddings */
 .p-1
 {
@@ -120,6 +125,14 @@ body{
 {
 	padding-right: 1.5rem !important;
 	padding-left: 1.5rem !important;
+}
+
+.pr-1{
+	padding-right: .500rem !important;
+}
+
+.pr-2{
+	padding-right: 1rem !important;
 }
 
 /* margins */
@@ -210,6 +223,6 @@ body{
 	color: var(--gray-5) !important;
 }
 
-.text-red{
-	color: var(--red) !important;
+.text-danger{
+	color: var(--danger) !important;
 }

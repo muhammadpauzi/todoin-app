@@ -45,10 +45,17 @@ const saveTodo = todo => {
     return sortTodos(todos);
 }
 
+const deleteTodo = id => {
+    const todos = getCurrentTodos().filter(todo => todo.id !== id);
+    localStorage.setItem('todos', JSON.stringify(todos));
+    return sortTodos(todos);
+}
+
 const todosStore = writable(getCurrentTodos());
 
 export default todosStore;
 export {
     getCurrentTodos,
-    saveTodo
+    saveTodo,
+    deleteTodo
 }
