@@ -1,7 +1,7 @@
 <script>
     import Button from "../shared/Button.svelte";
     import todosStore, { deleteTodo } from "../stores/todosStore";
-    export let data;
+    export let todo;
 
     const handleDelete = (id) => {
         $todosStore = deleteTodo(id);
@@ -13,13 +13,13 @@
         <input type="checkbox" />
     </div>
     <div class="flex-1">
-        <h2 class="mb-1">{data.title}</h2>
+        <h2 class="mb-1">{todo.title}</h2>
         <span class="text-gray"
-            >{new Date(data.dateCreated).toLocaleString()}</span
+            >{new Date(todo.dateCreated).toLocaleString()}</span
         >
     </div>
     <div>
-        <Button type="danger" on:click={() => handleDelete(data.id)}
+        <Button type="danger" on:click={() => handleDelete(todo.id)}
             >Delete</Button
         >
     </div>
