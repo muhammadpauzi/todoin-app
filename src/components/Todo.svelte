@@ -23,7 +23,7 @@
         <input
             type="checkbox"
             on:change={() => handleIsComplete(todo.id)}
-            value={todo.isComplete}
+            checked={todo.isComplete}
         />
     </div>
     <div class="flex-1">
