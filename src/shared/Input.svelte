@@ -14,6 +14,7 @@
         margin-bottom: 0.5rem;
         border-radius: var(--border-radius);
         border: 1px solid var(--gray-3);
+        background-color: var(--gray-2);
         font-size: 1rem;
         color: var(--gray-5);
         font-weight: var(--font-semibold);
@@ -25,5 +26,6 @@
     input:focus {
         border-color: var(--primary);
         color: var(--black);
+        box-shadow: 0 4px 8px rgb(172, 181, 246, 0.2);
     }
 </style>

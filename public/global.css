@@ -1,11 +1,14 @@
 /* variables */
 :root{
-	--primary: #4460F1;
-	--primary-2: #2747e4;
+	--primary: #6777ef;
+	--primary-2: #5162dd;
+	--primary-3: #acb5f6;
 	--danger: #ff2f2f;
 	--danger-2: #ec2222;
-	--gray-1: #F3F5F5;
-	--gray-3: #c9c9c9;
+	--danger-3: #fa8787;
+	--gray-1: #fafdfb;
+	--gray-2: #fdfdff;
+	--gray-3: #e4e6fc;
 	--gray-5: #666565;
 	--black: #000;
 	--white: #fff;
@@ -206,7 +209,7 @@ body{
 
 /* shadows */
 .shadow{
-	box-shadow: 0 2px 1px rgba(77, 77, 77, 0.1);
+	box-shadow: 0 4px 8px rgb(0 0 0 / 3%);
 }
 
 /* fonts */

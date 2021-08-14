@@ -33,7 +33,7 @@
         >
     </div>
     <div>
-        <Button type="danger" on:click={() => handleDelete(todo.id)}
+        <Button type="danger" size="sm" on:click={() => handleDelete(todo.id)}
             >Delete</Button
         >
     </div>
