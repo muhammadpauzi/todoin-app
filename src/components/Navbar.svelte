@@ -14,15 +14,4 @@
         font-weight: var(--font-bold);
         color: var(--primary);
     }
-
-    ul a {
-        color: var(--gray-5);
-        font-weight: var(--font-semibold);
-        font-size: 1rem;
-        transition: 0.3s color;
-    }
-
-    ul a:hover {
-        color: var(--primary);
-    }
 </style>
