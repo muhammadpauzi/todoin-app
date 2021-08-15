@@ -1,15 +1,6 @@
 <nav class="flex ai-c bg-white">
-    <div class="container flex jc-sb ai-c">
+    <div class="container">
         <a href="/" class="logo">Todoin</a>
-
-        <ul class="flex">
-            <li>
-                <a href="/" class="py-1 px-2">Todos</a>
-            </li>
-            <li>
-                <a href="/" class="py-1 px-2">About</a>
-            </li>
-        </ul>
     </div>
 </nav>
 
