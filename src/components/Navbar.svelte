@@ -1,5 +1,5 @@
 <nav class="flex ai-c bg-white">
-    <div class="container">
+    <div class="container text-center">
         <a href="/" class="logo">Todoin</a>
     </div>
 </nav>
