@@ -2,9 +2,11 @@
     export let placeholder = "";
     export const required = true;
     export let value = "";
+    export const autofocus = false;
 </script>
 
-<input type="text" {placeholder} required bind:value />
+<!-- svelte-ignore a11y-autofocus -->
+<input type="text" {placeholder} required bind:value on:input autofocus />
 
 <style>
     input {

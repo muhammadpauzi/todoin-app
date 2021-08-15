@@ -29,13 +29,17 @@ const sortTodos = (todos, sortBy = '2') => {
     })
 }
 
-const getCurrentTodos = () => {
-    const todos = localStorage.getItem('todos');
+const getCurrentTodos = (keyword) => {
+    let todos = localStorage.getItem('todos');
     if (todos === null) {
         localStorage.setItem('todos', '[]');
         return [];
     }
-    return sortTodos(JSON.parse(todos));
+    todos = JSON.parse(todos);
+    if (keyword) {
+        todos = todos.filter(todo => todo.title.includes(keyword) && todo);
+    }
+    return sortTodos(todos);
 }
 
 const saveTodo = todo => {
