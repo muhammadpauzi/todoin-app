@@ -18,6 +18,9 @@
     };
 
     const handleEditTodo = (id, value) => {
+        if (value.trim() === "") {
+            return alert("Please enter at least 1 character!");
+        }
         const todoById = getTodoById(id);
         todoById.title = value;
         $todosStore = editTodo(todoById);
