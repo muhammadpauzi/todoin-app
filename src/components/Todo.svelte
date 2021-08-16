@@ -38,7 +38,7 @@
             checked={todo.isComplete}
         />
     </div>
-    <div class="flex-1">
+    <div class="flex-1 pr-1">
         <h2 class="mb-1">
             <Input
                 value={todo.title}

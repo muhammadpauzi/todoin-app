@@ -41,7 +41,7 @@
     }
 
     input.todo-input {
-        width: fit-content;
+        width: 100%;
         border-color: transparent;
         padding: 0.4rem 0.3rem;
         background-color: transparent;
