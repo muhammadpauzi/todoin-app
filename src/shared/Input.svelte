@@ -44,6 +44,11 @@
         width: fit-content;
         border-color: transparent;
         padding: 0.4rem 0.3rem;
+        background-color: transparent;
+    }
+
+    input.todo-input.is-complete {
+        color: var(--white);
     }
 
     input.todo-input:focus {

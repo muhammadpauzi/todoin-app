@@ -42,7 +42,9 @@
         <h2 class="mb-1">
             <Input
                 value={todo.title}
-                className="todo-input"
+                className={todo.isComplete
+                    ? "todo-input is-complete"
+                    : "todo-input"}
                 on:input={(e) => handleEditTodo(todo.id, e.target.value)}
             />
         </h2>
@@ -61,14 +63,16 @@
     .todo {
         width: 100%;
         background-color: var(--white);
+        transition-property: background-image, color;
+        transition-duration: 0.3s;
     }
 
-    /* .todo.is-complete h2 {
-        text-decoration: line-through;
-    } */
-
     .todo.is-complete {
-        background-color: var(--gray-1);
+        background-image: linear-gradient(var(--success), var(--success-2));
+    }
+
+    .todo.is-complete span {
+        color: var(--white) !important;
     }
 
     .todo h2 {
