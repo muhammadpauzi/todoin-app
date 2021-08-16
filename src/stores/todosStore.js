@@ -55,6 +55,17 @@ const deleteTodo = id => {
     return sortTodos(todos);
 }
 
+const editTodo = editedTodo => {
+    const todos = getCurrentTodos().map(todo => {
+        if (todo.id === editedTodo.id) {
+            todo.title = editedTodo.title;
+        }
+        return todo
+    });
+    localStorage.setItem('todos', JSON.stringify(todos));
+    return sortTodos(todos);
+}
+
 const setIsCompleteTodo = id => {
     const todos = getCurrentTodos().map(todo => {
         if (todo.id === id) {
@@ -66,6 +77,10 @@ const setIsCompleteTodo = id => {
     return sortTodos(todos);
 }
 
+const getTodoById = (id) => {
+    return getCurrentTodos().find(todo => todo.id === id);
+}
+
 const todosStore = writable(getCurrentTodos());
 
 export default todosStore;
@@ -73,5 +88,7 @@ export {
     getCurrentTodos,
     saveTodo,
     deleteTodo,
-    setIsCompleteTodo
+    setIsCompleteTodo,
+    getTodoById,
+    editTodo
 }

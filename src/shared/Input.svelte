@@ -2,11 +2,20 @@
     export let placeholder = "";
     export const required = true;
     export let value = "";
+    export let className = "";
     export const autofocus = false;
 </script>
 
 <!-- svelte-ignore a11y-autofocus -->
-<input type="text" {placeholder} required bind:value on:input autofocus />
+<input
+    type="text"
+    {placeholder}
+    required
+    bind:value
+    on:input
+    {autofocus}
+    class={className}
+/>
 
 <style>
     input {
@@ -29,5 +38,15 @@
         border-color: var(--primary);
         color: var(--black);
         box-shadow: 0 4px 8px rgb(172, 181, 246, 0.2);
+    }
+
+    input.todo-input {
+        width: fit-content;
+        border-color: transparent;
+        padding: 0.4rem 0.3rem;
+    }
+
+    input.todo-input:focus {
+        border: 1px solid var(--primary);
     }
 </style>

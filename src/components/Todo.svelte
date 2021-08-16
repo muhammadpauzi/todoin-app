@@ -1,7 +1,10 @@
 <script>
     import Button from "../shared/Button.svelte";
+    import Input from "../shared/Input.svelte";
     import todosStore, {
         deleteTodo,
+        editTodo,
+        getTodoById,
         setIsCompleteTodo,
     } from "../stores/todosStore";
     export let todo;
@@ -12,6 +15,12 @@
 
     const handleIsComplete = (id) => {
         $todosStore = setIsCompleteTodo(id);
+    };
+
+    const handleEditTodo = (id, value) => {
+        const todoById = getTodoById(id);
+        todoById.title = value;
+        $todosStore = editTodo(todoById);
     };
 </script>
 
@@ -27,7 +36,13 @@
         />
     </div>
     <div class="flex-1">
-        <h2 class="mb-1">{todo.title}</h2>
+        <h2 class="mb-1">
+            <Input
+                value={todo.title}
+                className="todo-input"
+                on:input={(e) => handleEditTodo(todo.id, e.target.value)}
+            />
+        </h2>
         <span class="text-gray"
             >{new Date(todo.dateCreated).toLocaleString()}</span
         >
@@ -45,9 +60,9 @@
         background-color: var(--white);
     }
 
-    .todo.is-complete h2 {
+    /* .todo.is-complete h2 {
         text-decoration: line-through;
-    }
+    } */
 
     .todo.is-complete {
         background-color: var(--gray-1);
